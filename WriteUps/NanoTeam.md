@@ -10,8 +10,8 @@ https://t.bilibili.com/427257969311134815
 
 ## 1 a letter
 `https://puzzle.gztime.cc/Letter`
-![](https://github.com/GZTimeWalker/PuzzleGame-v1/WriteUps/images/MLj_.jpeg)
-![](https://github.com/GZTimeWalker/PuzzleGame-v1/WriteUps/images/upload_e666cb8b3be7df87dae99c19afd10680.png)
+![](https://github.com/GZTimeWalker/PuzzleGame-v1/blob/master/WriteUps/images/MLj_.jpeg)
+![](https://github.com/GZTimeWalker/PuzzleGame-v1/blob/master/WriteUps/images/upload_e666cb8b3be7df87dae99c19afd10680.png)
 
 邮票背景是地图，北纬 38 度，宁夏回族自治区吴忠市，邮编是 751100
 `751100`
@@ -36,7 +36,7 @@ i still hear you in the breeze
 see your shdows in the trees
 hoding on memories never change
 ```
-![](https://github.com/GZTimeWalker/PuzzleGame-v1/WriteUps/images/upload_fb4e5f34c1792309983558c54a6ac3e0.png)
+![](https://github.com/GZTimeWalker/PuzzleGame-v1/blob/master/WriteUps/images/upload_fb4e5f34c1792309983558c54a6ac3e0.png)
 
 
 `immortal`
@@ -44,7 +44,7 @@ hoding on memories never change
 ## 3 anime
 `https://puzzle.gztime.cc/Anime`
 
-![](https://github.com/GZTimeWalker/PuzzleGame-v1/WriteUps/images/upload_d53383477604a4f76d50aa33e532a4f1.png)
+![](https://github.com/GZTimeWalker/PuzzleGame-v1/blob/master/WriteUps/images/upload_d53383477604a4f76d50aa33e532a4f1.png)
 
 ## 4 math
 `https://puzzle.gztime.cc/Math`
@@ -70,7 +70,7 @@ iksns       - 8   3 鹄枭 结巴
 dontshirley - 149 6 蠢C  Du 
 beckyLeeh   - 78  5 爱车 Be
 ```
-![](https://github.com/GZTimeWalker/PuzzleGame-v1/WriteUps/images/upload_8d5dc8d0a70d0f8bc800379727b9c2b3.png)
+![](https://github.com/GZTimeWalker/PuzzleGame-v1/blob/master/WriteUps/images/upload_8d5dc8d0a70d0f8bc800379727b9c2b3.png)
 
 `->`代表右移
 
@@ -90,7 +90,7 @@ beckyLeeh berryswing 4 5
 压缩包密码 `m1RacLe`
 （密码可以看图，也可以明文攻击）
 
-![](https://github.com/GZTimeWalker/PuzzleGame-v1/WriteUps/images/upload_479baa5d3ec28e77aef7908d22433c88.png)
+![](https://github.com/GZTimeWalker/PuzzleGame-v1/blob/master/WriteUps/images/upload_479baa5d3ec28e77aef7908d22433c88.png)
 
 `3Lhy0-EA`
 
@@ -257,7 +257,7 @@ for c in path:
     move(c)
 ```
 
-![](https://github.com/GZTimeWalker/PuzzleGame-v1/WriteUps/images/upload_9f299f9383ae53fbc1d6e78260166ac9.png)
+![](https://github.com/GZTimeWalker/PuzzleGame-v1/blob/master/WriteUps/images/upload_9f299f9383ae53fbc1d6e78260166ac9.png)
 
 ## 12 NO12
 `https://puzzle.gztime.cc/NO12`
@@ -278,7 +278,7 @@ rot47(-15): `mali?k=a803c`
 `https://puzzle.gztime.cc/Zubeneschamali?k=a803c4-b1c!2f1100`
 
 背景SVG删遮罩图层：
-![](https://github.com/GZTimeWalker/PuzzleGame-v1/WriteUps/images/upload_e37e4599cb40c1190b24a31b787420c1.png)
+![](https://github.com/GZTimeWalker/PuzzleGame-v1/blob/master/WriteUps/images/upload_e37e4599cb40c1190b24a31b787420c1.png)
 
 删去 `style="display:none;"`
 第一个输入框： `not_now`
