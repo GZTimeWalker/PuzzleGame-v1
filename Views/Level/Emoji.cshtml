@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Emoji";
+    ViewData["InputPlaceholder"] = "Can you decode it?";
+    ViewData["LevelName"] = "Emoji";
+}
+
+@section Scripts{
+    <script src="~/js/emoji.js"></script>
+}
+
+@section CSS{ 
+    <link rel="stylesheet" href="~/css/emoji.css" />
+}
+
+<div class="container" id="main-container">
+    <h3 class="text-center s-0 mt-4 pt-2" style="display:none;">喜极而泣.jpg</h3>
+    <div class="m-auto s-1 text-center" id="img-container" style="display:none;">
+        <p id="emoji">🤣</p>
+    </div>
+</div>
+<partial name="InputMsgPartial" />

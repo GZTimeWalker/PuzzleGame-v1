@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Code";
+    ViewData["LevelName"] = "Code"; 
+    ViewData["InputPlaceholder"] = "Find the key";
+}
+
+@section Scripts{ 
+    <script src="~/js/code.js"></script>
+}
+
+<div class="container w-4 m-auto text-center p-3">
+    <div class="container w-4 m-auto text-center p-3">
+        <h3 class="s-0" style="display: none;">Code</h3>
+        <p class="mb-0 s-1" style="display:none;">有个十分好用的工具叫做codec</p>
+        <p class="mb-0 s-2" style="display:none;">自从高一遇到便总是玩得爱不释手</p>
+        <p class="mb-0 s-3" style="display:none;">还与一位曾经的朋友玩得不亦乐乎</p>
+        <p class="s-4" style="display:none;">在编码与解码中寻找那种心有灵犀的快乐</p>
+        <p class="mb-0 s-5" style="display:none;">这是一段看似无意义的文本</p>
+        <p class="s-5" style="display:none;">它将会告诉你本关的key是什么</p>
+        <p class="s-6 mt-3 md-3" style="display:none;font-weight:bold;">
+            @ViewData["code"]
+        </p>
+    </div>
+</div>
+<partial name="InputMsgPartial"/>

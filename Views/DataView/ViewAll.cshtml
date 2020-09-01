@@ -1,0 +1,19 @@
+﻿
+@model GZTimeServer.Models.TestViewModel
+@{
+    ViewData["Title"] = "Levels Data";
+}
+
+<div class="container" style="width:40rem;margin:auto">
+    <h1>当前总人数: @ViewBag.count</h1>
+
+    <hr />
+
+    <div class="container">
+        @foreach (var item in Model.Info)
+        {
+            <textarea class="form-control" style="margin-bottom:1rem;" cols="6" readonly rows="@Model.ViewRow">@item</textarea>
+        }
+    </div>
+</div>
+

@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "LevelData";
+}
+
+<div class="container m-auto text-center p-3" style="width:40%;min-width:30rem;">
+    <h2>目前解密总人数: @ViewBag.TotalCount</h2>
+    <hr/>
+    <h3>各关人数</h3>
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col">LevelID</th>
+                <th scope="col">LevelName</th>
+                <th scope="col">LevelCount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < 15; i++)
+            {
+                <tr>
+                    <th scope="row">@i</th>
+                    <td>@ViewBag.Levels[i]</td>
+                    <td>@ViewBag.Counts[i]</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

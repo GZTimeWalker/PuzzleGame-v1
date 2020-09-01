@@ -1,0 +1,260 @@
+﻿body {
+    user-select: none;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+}
+
+#c-msg {
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+}
+
+#msg {
+    margin: 0 auto;
+}
+
+#title {
+    width: 960px;
+    padding-bottom: 0px;
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+
+#viewport {
+    position: relative;
+    width: 960px;
+    height: 540px;
+    margin: auto;
+    background-image: url(../images/live/live_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0px 4px 4px 2px rgba(0,0,0,0.4), 
+        inset 0px 100px 48px -48px rgba(0, 0, 0, .75), 
+        inset 0px -100px 48px -48px rgba(0, 0, 0, .75);
+}
+
+#top-left {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 20px;
+    left: 20px;
+}
+
+p#text-streaming {
+    display: block;
+    text-align: center;
+    height: 24px;
+    width: 56px;
+    padding-bottom: 3px;
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Noto Sans SC';
+    background-color: #dd3d3d;
+    border-radius: 4px;
+}
+
+#icon-streaming {
+    width: 12px;
+    height: 12px;
+    margin: auto 8px;
+    background-color: #dd3d3d;
+    border-radius: 50%;
+    animation: blinking 2s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#icon-people {
+    width: 24px;
+    height: 24px;
+    margin: auto 12px 0px;
+    background-image: url(../images/account-multiple.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(1);
+}
+
+p#text-viewers {
+    height: 24px;
+    padding-bottom: 3px;
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Noto Sans SC';
+}
+
+#top-right {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 20px;
+    right: 20px;
+}
+
+p#info {
+    height: 24px;
+    margin: 0 3px 3px 0;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Noto Sans SC';
+}
+
+#btm-right {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    bottom: 20px;
+    right: 20px;
+}
+
+button.l-btn {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+    background-color: transparent;
+    background-image: url(../images/thumb-up-outline.svg);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 50;
+    border-color: rgb(133, 133, 133);
+    margin-left: 0.5rem;
+}
+
+    button.l-btn:focus {
+        outline: none;
+    }
+
+    button.l-btn.activated {
+        animation: like-active .4s;
+    }
+
+button#unlike{
+    transform: rotate(180deg);
+}
+
+@keyframes like-active {
+    0% {
+        background-size: 2px;
+    }
+
+    80% {
+        background-size: 30px;
+    }
+
+    100% {
+        background-size: 24px;
+    }
+}
+
+button.l-btn::before {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    box-shadow: 0 0 0 0px #fff;
+    border-radius: 50%;
+    content: "";
+    z-index: 49;
+}
+
+button.l-btn.activated::before {
+    animation: like-active-ripple .4s;
+}
+
+@keyframes like-active-ripple {
+    0% {
+        top: 23px;
+        left: 23px;
+        width: 2px;
+        height: 2px;
+        opacity: 0;
+        box-shadow: 0 0 0 0px rgb(211, 19, 12);
+    }
+
+    50% {
+        top: 6px;
+        left: 6px;
+        width: 36px;
+        height: 36px;
+        opacity: 1;
+        box-shadow: 0 0 0 12px rgb(211, 12, 72);
+    }
+
+    100% {
+        top: -12px;
+        left: -12px;
+        width: 72px;
+        height: 72px;
+        opacity: 1;
+        box-shadow: 0 0 0 0px rgb(60, 16, 218);
+    }
+}
+
+#text-like {
+    display: block;
+    text-align: center;
+    height: 24px;
+    padding: 0 8px 3px 8px;
+    margin: auto;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Noto Sans SC';
+    background-color: #2060eb;
+    border-radius: 4px;
+}
+
+#playsound {
+    cursor: pointer;
+}
+
+#playsound:hover {
+    text-decoration: underline;
+}
+
+.eye {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#eye-0 {
+    background-image: url(../images/live/r_eye.png);
+}
+
+#eye-1 {
+    background-image: url(../images/live/l_eye.png);
+}

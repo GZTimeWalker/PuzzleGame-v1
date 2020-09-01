@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewData["Title"] = "Anime";
+}
+
+@section CSS {
+    <link rel="stylesheet" href="~/css/anime.css" />
+    @if ((bool)ViewData["is_iPad"])
+    {
+    <style>
+        #film {
+            background: rgba(255,255,255,0.4) ;
+        }
+    </style>
+    }
+}
+
+@section Scripts {
+    <script src="~/js/anime.js"></script>
+}
+
+<div class="container m-auto text-center p-3">
+    <h4 class="s-0" style="display: none;">谁还没有过追番的岁月呢?</h4>
+    <small class="s-0" style="display: none;">PS:从4部番中选择2部即可</small>
+</div>
+<div class="container-fluid p-0 s-1" style="display: none;" id="main-container">
+    <div id="film">
+        <div class="holes"></div>
+        <div id="frames-front" class="frames">
+            <div class="anime-cover frontcover" id="anime0"></div>
+            <div class="anime-cover frontcover" id="anime1"></div>
+            <div class="anime-cover frontcover" id="anime2"></div>
+            <div class="anime-cover frontcover" id="anime3"></div>
+        </div>
+        <div id="frames-back" class="frames">
+            <div class="anime-cover backcover">
+                <input type="tel" placeholder="Episode" class="epi" />
+                <input type="tel" placeholder="Minute" class="min" />
+                <input type="tel" placeholder="Second" class="sec" />
+                <button id="abtn_0" class="abtn"></button>
+            </div>
+            <div class="anime-cover backcover">
+                <input type="tel" placeholder="Episode" class="epi" />
+                <input type="tel" placeholder="Minute" class="min" />
+                <input type="tel" placeholder="Second" class="sec" />
+                <button id="abtn_1" class="abtn"></button>
+            </div>
+            <div class="anime-cover backcover">
+                <input type="tel" placeholder="Episode" class="epi" />
+                <input type="tel" placeholder="Minute" class="min" />
+                <input type="tel" placeholder="Second" class="sec" />
+                <button id="abtn_2" class="abtn"></button>
+            </div>
+            <div class="anime-cover backcover">
+                <input type="tel" placeholder="Episode" class="epi" />
+                <input type="tel" placeholder="Minute" class="min" />
+                <input type="tel" placeholder="Second" class="sec" />
+                <button id="abtn_3" class="abtn"></button>
+            </div>
+        </div>
+        <div class="holes"></div>
+    </div>
+    <div id="rotate-bt" class="s-2" style="display: none;"></div>
+</div>
+<div class="container p-3 m-2-auto s-3 text-center" style="padding-top:3rem!important">
+    <div id="msg"></div>
+</div>

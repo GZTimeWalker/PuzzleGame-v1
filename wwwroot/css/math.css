@@ -1,0 +1,48 @@
+﻿body {
+    background: #252525;
+    color: #fff;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+#father {
+    position: relative;
+    border: 2px dotted;
+    margin: auto;
+    width: 20rem;
+    height: 20rem;
+}
+
+#father .gc {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#ed {
+    font-family: consolas;
+}
+
+@media all and (max-width:575px) {
+    #father {
+        position: relative;
+        border: 2px dotted;
+        margin: auto;
+        width: 12rem;
+        height: 12rem;
+    }
+
+    #father .gc {
+        position: absolute;
+        width: 12rem;
+        height: 12rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

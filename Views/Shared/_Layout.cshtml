@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+<head>
+    <title>@ViewData["Title"]</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/shared.css" />
+    @RenderSection("CSS", required: false)
+</head>
+<body>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="~/js/updateProcess.js"></script>
+    @RenderBody()
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "Letter";
+}
+
+@section CSS {
+    <link rel="stylesheet" href="~/css/letter.css" />
+}
+
+@section Scripts {
+    <script src="~/js/letter.js"></script>
+}
+
+<div class="container m-auto p-4" id="letter-container" style="display:none;">
+    <div class="form-group">
+        <div class="row justify-content-md-center" id="letter-header">
+            <div class="col">
+                <div id="custom-input" class="input-group float-left text-center">
+                    <input type="text" class="form-control box">
+                    <input type="text" class="form-control box">
+                    <input type="text" class="form-control box">
+                    <input type="text" class="form-control box">
+                    <input type="text" class="form-control box">
+                    <input type="text" class="form-control box">
+                </div>
+                <div class="float-right stamp big-stamp">
+                    <img src="~/images/stamp.png" class="my-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-container">
+        <div class="text-left h4" id="text-receiver">Dear GZTime:</div>
+        <div class="justify-content-md-center">
+            <blockquote class="blockquote" style="width: 100%;">
+                <textarea class="form-control" id="my-text" rows="9" disabled="disabled"></textarea>
+                <footer class="blockquote-footer text-right"><cite title="Source Title">GZTime</cite> from the future</footer>
+            </blockquote>
+        </div>
+    </div>
+    <div id="small-stamp-container">
+        <div class="stamp small-stamp float-right">
+            <img src="~/images/stamp.png" class="my-img" />
+        </div>
+    </div>
+</div>
+
+
+

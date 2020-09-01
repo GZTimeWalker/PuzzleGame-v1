@@ -1,0 +1,17 @@
+﻿#img-container {
+    background-image: url(../images/emoji_b.png);
+    background-color: transparent;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    border: none;
+    max-width: 35rem;
+}
+
+#emoji {
+    filter: invert(1);
+    font-size: 120px;
+    padding: 4rem;
+    margin: 2rem;
+}

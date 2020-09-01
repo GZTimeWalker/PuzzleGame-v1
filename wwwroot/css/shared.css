@@ -1,0 +1,38 @@
+﻿#_alert {
+    float: right !important;
+    position: absolute;
+    width: 30%;
+    right: 1rem;
+    top: 68vh;
+    min-width: 25rem;
+    z-index: 99999999;
+}
+
+@media all and (max-width:410px) {
+    #_alert {
+        width: 90%;
+        bottom: 0.5rem;
+        left: 50%;
+        transform: translate(-50%,0);
+        top: auto;
+    }
+}
+
+body {
+    background-color: #252525;
+    color: #fff;
+}
+
+#msg {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+#c-container {
+    max-width: 30rem;
+}
+
+p {
+    word-wrap: break-word;
+}

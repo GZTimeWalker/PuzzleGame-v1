@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Trees";
+    ViewData["InputPlaceholder"] = "树上写了什么?";
+    ViewData["LevelName"] = "Trees";
+}
+
+@section CSS{
+    <link rel="stylesheet" href="~/css/trees.css" />
+}
+
+@section Scripts{
+    <script src="~/js/trees.js"></script>
+}
+
+<!-- <==0b_0000_1111== |p{xNzLpG?Br -->
+<div class="container" id="main-container">
+    <h3 class="text-center s-0" style="display:none;">How to <strong>BUILD</strong> a tree?</h3>
+    <div class="m-auto s-1" id="img-container" style="display:none;">
+        <img src="~/images/Trees.png" />
+        <!-- 从上向下 黑白间隔  -->
+    </div>
+</div>
+<partial name="InputMsgPartial" />

@@ -1,0 +1,104 @@
+﻿div#letter-container {
+    position: relative;
+    top: 5rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 2px rgba(0,0,0,0.4);
+    height: auto;
+    padding: 1rem;
+    color: black;
+}
+
+div#letter-header {
+    height: 30%
+}
+
+#custom-input {
+    width: 16.5rem;
+}
+
+#custom-input > input {
+    font-family: serif;
+    margin-right: 0.5rem;
+    border-radius: 0;
+    border: 4px solid rgb(212, 33, 33);
+    padding: 3px 3px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#custom-input > input:focus {
+    border: 4px dashed rgb(212, 33, 33);
+    box-shadow: none;
+}
+
+.stamp {
+    width: 7rem;
+    height: 7rem;
+    background: #fff;
+}
+
+#main-container {
+    width: 90%;
+    margin: -2rem auto;
+    height: auto;
+    max-height: 70%;
+}
+
+#text-receiver {
+    margin-bottom: 1rem;
+}
+
+textarea#my-text {
+    resize: none;
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background-color: #fff;
+    border: none;
+}
+
+#small-stamp-container {
+    display: none;
+    height: 72px;
+    width: 100%;
+}
+
+.small-stamp {
+    width: 5rem !important;
+    height: 5rem !important;
+    margin: 0;
+}
+
+.my-img {
+    width: 100%;
+    height: 100%;
+}
+
+footer.blockquote-footer {
+    margin-bottom: 4rem;
+}
+
+@media all and (max-width:575px) {
+
+    div#letter-container {
+        top: 1.5rem;
+        width: 90%;
+    }
+
+    #main-container {
+        margin: 0rem auto;
+    }
+
+    .big-stamp {
+        display: none;
+    }
+
+    footer.blockquote-footer {
+        margin-bottom: 0rem;
+    }
+
+    #small-stamp-container {
+        display: block;
+    }
+}

@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Memory";
+    ViewData["InputPlaceholder"] = "你寻得的残缺的记忆。";
+    ViewData["LevelName"] = "Memory";
+}
+
+@section Scripts {
+    <script src="~/js/memory.js"></script>
+}
+
+<div class="container w-4 m-auto text-center p-3">
+    <div class="container p-3 m-2-auto s-0" style="display: none;">
+        <h4>记忆中的</h4>
+        <h4>《-- --- -. ■■■ ■■■ ■■■■》</h4>
+        <br />
+        <!-- Base 64 -->
+        <p class="mb-0 s-1" style="display: none;">c3VtbWVyJTIwaW4lMjB0aGUlMjBoaWxscw==</p>
+        <p class="mb-0 s-1" style="display: none;">dGhvc2UlMjBoYXp5JTIwZGF5cyUyMGklMjBkbyUyMHJlbWVtYmVy</p>
+        <p class="mb-0 s-1" style="display: none;">d2UlMjB3ZXJlJTIwcnVubmluZyUyMHN0bGw=</p>
+        <p class="mb-0 s-1" style="display: none;">aGFkJTIwdGhlJTIwd2hvbGUlMjB3b3JsZCUyMGF0JTIwb3VyJTIwZmVldCUwQQ==</p>
+        <p class="mb-0 s-1" style="display: none;">d2F0Y2hpbmclMjBzZWFzb25zJTIwY2hhbmdl</p>
+        <p class="mb-0 s-1" style="display: none;">b3VyJTIwcm9hZHMlMjB3ZXJlJTIwbGluZWQlMjB3aXRoJTIwYWR2ZW50dXJlJTBB</p>
+        <p class="mb-0 s-1" style="display: none;">b3VudGFpbnMlMjBpbiUyMHRoZSUyMHdheSUwQQ==</p>
+        <p class="mb-0 s-1" style="display: none;">Y291bGRuJTI3dCUyMGtlZXAlMjB1cyUyMGZybyUyMHRoZSUyMHNlYQ==</p>
+        <p class="mb-0 s-1" style="display: none;">aGVyZSUyMHdlJTIwc3RhbmQlMjBwZW4lMjBhcm1z</p>
+        <p class="mb-0 s-1" style="display: none;">dGhpcyUyMGlzJTIwaG9tZSUyMHdoZXJlJTIwd2UlMjBhZSUwQQ==</p>
+        <p class="mb-0 s-1" style="display: none;">ZXZlciUyMHNyb25nJTIwaW4lMjB0aGUlMjB3b3JsZCUyMHRoYXQlMjB3ZSUyMG1hZGUlMEE=</p>
+        <p class="mb-0 s-1" style="display: none;">aSUyMHN0aWxsJTIwaGVhciUyMHlvdSUyMGluJTIwdGhlJTIwYnJlZXpl</p>
+        <p class="mb-0 s-1" style="display: none;">c2VlJTIweW91ciUyMHNoZG93cyUyMGluJTIwdGhlJTIwdHJlZXM=</p>
+        <p class="mb-0 s-1" style="display: none;">aG9kaW5nJTIwb24lMjBtZW1vcmllcyUyMG5ldmVyJTIwY2hhbmdl</p>
+    </div>
+    <partial name="InputMsgPartial" />
+</div>
+

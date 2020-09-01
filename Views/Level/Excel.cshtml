@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Excel";
+    ViewData["InputPlaceholder"] = "Find the key";
+    ViewData["LevelName"] = "Excel";
+}
+
+@section CSS {
+    <link rel="stylesheet" href="~/css/excel.css" />
+}
+
+@section Scripts {
+    <script src="~/js/excel.js"></script>
+}
+
+
+<div class="container w-4 m-auto text-center p-3">
+    <h3 class="s-0" style="display: none;">？？？</h3>
+    <p class="mb-0 s-1" style="display: none;">这与我最常用的工具有关</p>
+    <div class="q-container m-auto s-1" style="display: none;"></div>
+    <button id="download" class="btn btn-outline-light mb-1 s-4" style="display: none;">Download Key File</button>
+</div>
+<partial name="InputMsgPartial" />

@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Billionaire";
+}
+
+@section CSS{
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/live.css" />
+}
+
+@section Scripts{
+    <script src="~/js/live.js"></script>
+}
+
+<audio id="sound" src="../assets/dingtalk.mp3" type="audio/mpeg"></audio>
+<div id="container" style="display:none">
+    <div id="viewport">
+        <div class="eye" id="eye-0"></div>
+        <div class="eye" id="eye-1"></div>
+        <div id="top-left">
+            <p id="text-streaming">直播中</p>
+            <div id="icon-streaming"></div>
+            <div id="icon-people"></div>
+            <p id="text-viewers">@ViewData["Count"] 人观看&nbsp;|&nbsp;家里屯大学0202届番剧选修网课</p>
+        </div>
+
+        <div id="top-right">
+            <p id="info">群直播介绍&nbsp;&nbsp;|&nbsp;&nbsp;<span id="playsound">举报</span></p>
+        </div>
+
+        <div id="btm-right">
+            <button class="l-btn" id="unlike"></button>
+            <button class="l-btn" id="like"></button>
+            <div id="text-like">赞 <span id="likeCount">0</span></div>
+        </div>
+    </div>
+</div>
+
+<div class="container p-3 m-2-auto" id="c-msg" style="display:none;">
+    <div id="msg"></div>
+</div>

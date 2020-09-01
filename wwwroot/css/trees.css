@@ -1,0 +1,21 @@
+﻿#main-container {
+    width: 50rem;
+    margin: auto;
+    padding: 1rem;
+    position: relative;
+}
+
+#img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25rem;
+}
+
+img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    max-width: 30rem;
+}

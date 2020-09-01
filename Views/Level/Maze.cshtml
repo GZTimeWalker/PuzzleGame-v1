@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Maze";
+}
+
+@section Scripts {
+    <script>
+        var walls = @ViewBag.state.walls;
+        var pos = [@ViewBag.state.x,@ViewBag.state.y];
+    </script>
+    <script src="~/js/maze.js"></script>
+}
+
+@section CSS{
+    <link rel="stylesheet" href="~/css/maze.css" />
+}
+
+<div id="container" style="display:none;">
+    <div id="pos"><h3>(<span id="pos-x">0</span>,<span id="pos-y">0</span>)</h3></div>
+    <div id="main">
+        <div class="wall-container" id="wall-n"><div class="wall" id="n"></div></div>
+        <div class="wall-container" id="wall-e"><div class="wall" id="e"></div></div>
+        <div class="wall-container" id="wall-s"><div class="wall" id="s"></div></div>
+        <div class="wall-container" id="wall-w"><div class="wall" id="w"></div></div>
+        <div id="player">
+            <div class="arrow" id="arrow-n"></div>
+            <div class="arrow" id="arrow-e"></div>
+            <div class="arrow" id="arrow-s"></div>
+            <div class="arrow" id="arrow-w"></div>
+            <div id="reset"></div>
+        </div>
+    </div>
+</div>
+<div class="container p-3 m-2-auto" id="c-msg" style="display:none;">
+    <div class="mb-0" id="msg"></div>
+    <p class="mb-0" style="font-size:small">可以使用WASD和方向键控制</p>
+    <p class="mb-0" style="font-size:small">服务器会保存你的进度哦！努力从(0,0)走到(63,63)吧🤪🤪🤪</p>
+</div>

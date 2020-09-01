@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewData["Title"] = "Math";
+}
+
+@section CSS {
+    <link rel="stylesheet" href="~/css/math.css" />
+}
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.0.0/math.min.js"></script>
+    <script src="~/js/math.js"></script>
+}
+
+<div class="container w-4 m-auto text-center p-3">
+    <div class="container mb-3">
+        <h2 class="s-1" style="display: none;">Here with math!</h2>
+        <p class="mb-0 s-2" style="display: none;">说起数学，对任何人都是段难忘的回忆。无论是小学数学背着的九九乘法表，还是摆在眼前的高考压轴题。来吧，尝试下函数的拟合！</p>
+        <p class="pb-0 s-2 mt-0" style="display:none;cursor:default;font-size:smaller">不要试图进行调试,该操作可能导致关卡无法正常加载!</p>
+        <p class="s-3" style="display: none;">当前残差:&emsp;<span id="err" style="font-weight:bold;">Infinity</span>&emsp;&emsp;&emsp;当前关卡:&emsp;<span id="_l" style="font-weight:bold;">1/5</span></p>
+    </div>
+
+    <div id="father" class="container mb-3 s-5" style="display: none;">
+        <canvas class="gc" style="z-index:2;opacity:0.8;"></canvas>
+        <canvas class="gc" style="z-index:1;"></canvas>
+        <div id="c_l" style="display:none;">U2FsdGVkX1+p6rcQp8dxl20OjSuCWA==</div>
+    </div>
+
+    <div class="row justify-content-end w-50 m-auto s-4" style="display: none;">
+        <div class="col mb-3">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">y = </span>
+                </div>
+                <input type="text" class="form-control" id="input-box">
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-3 m-2-auto s-6" style="display: none;">
+        <div id="msg"></div>
+    </div>
+
+    <div class="container w-4 m-auto text-left p-2 s-4" style="display: none;">
+        <strong>可能使用到的常量:</strong>
+        <table class="table table-dark table-striped text-center mt-3 mb-3">
+            <thead>
+                <tr>
+                    <th scope="col">常量</th>
+                    <th scope="col">描述</th>
+                    <th scope="col">常量</th>
+                    <th scope="col">描述</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">E</th>
+                    <td>自然对数的底数e</td>
+                    <th>PI</th>
+                    <td>圆周率π</td>
+                </tr>
+            </tbody>
+        </table>
+        <strong>可能使用到的函数:</strong>
+        <table class="table table-dark table-striped text-center mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">函数</th>
+                    <th scope="col">描述</th>
+                    <th scope="col">函数</th>
+                    <th scope="col">描述</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">sin()</th>
+                    <td>正弦函数</td>
+                    <th>cos()</th>
+                    <td>余弦函数</td>
+                </tr>
+                <tr>
+                    <th scope="row">tan()</th>
+                    <td>正切函数</td>
+                    <th>abs()</th>
+                    <td>绝对值函数</td>
+                </tr>
+                <tr>
+                    <th scope="row">log()</th>
+                    <td>自然对数函数</td>
+                    <th>sqrt()</th>
+                    <td>平方根函数</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <small class="s-5" style="display: none;">Powered by 烧风</small>
+</div>
+
